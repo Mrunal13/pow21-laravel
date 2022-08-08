@@ -62,7 +62,7 @@ $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
 $response = $kernel->handle(
     $request = Illuminate\Http\Request::capture()
 );
-//echo 'sadfdsf'; exit();
+echo 'sadfdsf'; exit();
 $response->send();
 
 $kernel->terminate($request, $response);

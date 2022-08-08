@@ -16,7 +16,7 @@
 
 		    public function hook_before(&$postdata) {
 		        //This method will be execute before run the main process
-
+		    	dd($postdata);
 		    }
 
 		    public function hook_query(&$query) {
@@ -26,6 +26,7 @@
 
 		    public function hook_after($postdata,&$result) {
 		        //This method will be execute after run the main process
+		        dd($postdata);
 
 		    }
 
