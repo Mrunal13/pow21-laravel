@@ -212,6 +212,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Goutte' => Weidner\Goutte\GoutteFacade::class,
+        'Arr'       => Illuminate\Support\Arr::class,
+        'Str'       => Illuminate\Support\Str::class,
 
     ],
 
