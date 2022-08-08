@@ -1,9 +1,9 @@
 <?php
 //phpinfo(); exit();
-//echo "111"; exit();
-// ini_set('display_errors', 1);
-// ini_set('display_startup_errors', 1);
-// error_reporting(E_ALL);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 
 /**
  * Laravel - A PHP Framework For Web Artisans
@@ -11,9 +11,9 @@
  * @package  Laravel
  * @author   Taylor Otwell <taylor@laravel.com>
  */
-
+// echo "asdadad";die;
 define('LARAVEL_START', microtime(true));
-
+// header('Access-Control-Allow-Origin: *');
 /*
 |--------------------------------------------------------------------------
 | Register The Auto Loader
@@ -62,7 +62,7 @@ $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
 $response = $kernel->handle(
     $request = Illuminate\Http\Request::capture()
 );
-echo 'sadfdsf'; exit();
+
 $response->send();
 
 $kernel->terminate($request, $response);
